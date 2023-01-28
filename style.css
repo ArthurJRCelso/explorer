@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+main {
+  text-align: center;
+  margin: auto;
+  width: 592px;
+  height: 579px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  width: 562px;
+  height: 112px;
+  padding-top: 60px;
+  margin: auto;
+  font-size: 49px;
+}
+
+span {
+  color: #FF9900;
+}
+
+article {
+  width: 592px;
+  height: 140px;
+  margin: auto;
+  padding-top: 40px;
+  line-height: 28px;
+}
+
+p {
+  color: #7D7987;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+a {
+  color: #FF9900;
+  margin-right: 20px;
+  
+}
+
+footer {
+  margin: auto;
+  padding-top: 40px;
+  
+}
