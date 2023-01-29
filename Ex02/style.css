@@ -6,8 +6,7 @@ body {
 #container {
   max-width: 626px;
   min-width: 300px;
-  max-height: 486px;
-  min-height: auto;
+  height: 486px;
   margin: auto;
   padding: 5px;
   text-align: center;
