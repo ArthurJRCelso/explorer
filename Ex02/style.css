@@ -5,7 +5,7 @@ body {
 
 #container {
   width: 626px;
-  height: 100vh;
+  height: 100%;
   margin: auto;
   padding: 5px;
   text-align: center;
