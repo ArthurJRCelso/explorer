@@ -4,8 +4,10 @@ body {
 }
 
 #container {
-  width: 626px;
-  height: 486px;
+  max-width: 626px;
+  min-width: 300px;
+  max-height: 486px;
+  min-height: auto;
   margin: auto;
   text-align: center;
 }
