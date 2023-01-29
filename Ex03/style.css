@@ -1,12 +1,15 @@
 body {
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(61, 203, 167, 0.38) 100%);
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 .container {
   width: 1000px;
   height: 436px;
-  margin: 65px auto 30px;
+  margin: 0 auto;
+  padding-top: 65px;
   
 }
 
@@ -31,10 +34,12 @@ ul a {
   text-decoration: none;
   font-size: 18px;
   color: #1F1534;
+  opacity: 0.5;
 }
 
 ul a:hover {
   font-weight: bold;
+  opacity: 1;
 }
 
 main {
@@ -75,8 +80,8 @@ p {
 
 button {
   display: flex;
-  width: 179px;
-  height: 56px;
+  padding: 14px 32px 15px;
+  justify-content: center;
   align-items: center;
   background-color: #69B99D;
   border: none;
@@ -88,8 +93,8 @@ button {
   
 }
 
-button img {
-  padding-left: 32px;
+button:hover {
+  background-color: #7fe3c2;
 }
 
 footer {
