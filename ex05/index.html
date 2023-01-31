@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Evento</title>
+</head>
+<body>
+  <div id="title">
+    <header>
+      <h1>Crie e compartilhe seu evento.</h1>
+      <p>O primeiro passo, é preencher esse
+         formulário de inscrição.</p>
+    </header>
+  </div>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Informações do Evento</legend>
+      </fieldset>
+      <div id="titulo-evento">
+        <label for="title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+        <input type="text" name="title" id="title">
+      </div>
+      <div id="link-evento">
+        <label for="link">Link do evento <span>(comece com https://)</span></label>
+        <input type="url" name="link" id="link">
+      </div>
+      <div id="wpp">
+        <label for="whatsapp">Whatsapp para contato <span>(somente números)</span></label>
+        <input type="number" name="whatsapp" id="whatsapp">
+      </div>
+      <div id="info">
+        <label for="extras">Informações extras</label>
+        <textarea name="" id="extras" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
