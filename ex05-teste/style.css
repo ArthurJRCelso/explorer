@@ -161,7 +161,7 @@ select {
 }
 
 .col-3 > div:nth-child(1) {
-  width: 99%;
+  width: 100%;
 }
 
 
