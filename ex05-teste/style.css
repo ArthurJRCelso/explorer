@@ -155,5 +155,14 @@ select {
     background-position: right 24px top 50%;
 }
 
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
 
 
