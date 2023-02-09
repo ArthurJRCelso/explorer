@@ -201,6 +201,7 @@ select {
 .col-3 {
   display: flex;
   gap: 20px;
+  
 }
 
 .col-3 > div:nth-child(1) {
