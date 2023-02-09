@@ -74,7 +74,7 @@ header p {
 
 form {
   width: 750px;
-  height: 1075px;
+  height: 1000px;
   background-color: white;
   margin: auto;
   padding: 1px 65px 0 65px;
@@ -130,6 +130,7 @@ input, textarea {
 
 main {
   margin-top: 32px;
+  padding-bottom: 52px;
 }
 
 main h1 {
@@ -225,6 +226,7 @@ textarea {
 .col-3 {
   display: flex;
   gap: 30px;
+  margin: 0;
 }
 
 .col-3 div {
@@ -237,4 +239,24 @@ textarea {
 
 .input-das, .input-ate {
   width: 140px;
+}
+
+.button {
+  margin-top: 1px;
+}
+
+.button input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #F67669;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
 }
