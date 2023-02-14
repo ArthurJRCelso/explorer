@@ -33,9 +33,23 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 700px) {
+  :root {
+    --fs-heading: 5.6rem;
+  }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+}
+
 header {
   margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
+
+  animation-name: topdown;
+  animation-duration: 700ms;
 
   text-align: center;
 }
@@ -96,7 +110,7 @@ header h1 {
   bottom: 5.2rem;
   left: 2.8rem;
 
-  font-size: var(--fs-heading);
+  font-size: 4rem;
   font-weight: 800;
 
   display: flex;
@@ -118,14 +132,6 @@ header h1 {
   align-items: center;
 }
 
-header {
-  animation-name: topdown;
-  animation-duration: 700ms;
-}
-
-main {
-  
-}
 
 @keyframes topdown {
   0% {
