@@ -42,6 +42,19 @@ body {
     max-width: 117rem;
     padding: 0 5rem;
   }
+
+  main {
+    grid-template-areas: "A B B"
+    "C C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
 }
 
 header {
