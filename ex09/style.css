@@ -34,10 +34,6 @@ body {
 }
 
 @media (min-width: 700px) {
-  :root {
-    --fs-heading: 5.6rem;
-  }
-
   .page {
     max-width: 117rem;
     padding: 0 5rem;
@@ -125,6 +121,7 @@ header h1 {
   height: 41.6rem;
   object-fit: cover;
   transition: all 200ms;
+  filter: brightness(0.5);
 }
 
 .card img:hover {
