@@ -16,12 +16,11 @@
 
 body {
   font-family: var(--ff-p);
+  background: #EFF1FF;
 }
 
 .page {
-  max-width: 38.4rem;
   margin: auto;
-  
 }
 
 header {
@@ -29,14 +28,18 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 3.2rem;
+  
   background-color: var(--bg);
+  
   padding-bottom: 2.9rem;
 }
 
 header .tittle {
   background-color: var(--tittle);
+  
   width: 100%;
   height: 4.9rem;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,23 +62,76 @@ header img {
 }
 
 main {
-  background-color: var(--bg-main);
-  padding-top: 1.4rem;
   display: grid;
-  gap: 3.2rem;
+  width: 32rem;
+  margin: auto;
+  text-align: center;
+  padding-top: 1.4rem;
 }
 
 main p {
+  font-family: 'Palanquin';
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 2rem;
-  display: grid;
+  line-height: 1.5rem;
+  display: flex;
   align-items: center;
   text-align: center;
-  color: #23053A;
+  margin-bottom: 3rem;
+  letter-spacing: 0.04rem;
 }
 
-main img {
-  margin: auto;
+.container {
+  display: grid;
+  gap: 3.2rem;
+  padding-bottom: 3.2rem;
 }
+
+.card {
+  position: relative;
+}
+
+#card1 img {
+  height: 25rem;
+}
+
+.card img {
+  width: 32rem;
+  height: 45rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: transform 200ms;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.card h2 {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  color: #4A4E69;
+  background: #FEEAFA;
+  border-radius: 20px;
+  width: 11.2rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-tittle);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+}
+
+
+
+
+
+
+
