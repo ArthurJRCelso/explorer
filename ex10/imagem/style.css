@@ -20,7 +20,14 @@ body {
 }
 
 .page {
-  margin: auto;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .page {
+    max-width: 117rem;
+  }
 }
 
 header {
@@ -97,8 +104,8 @@ main p {
 }
 
 .card img {
-  width: 32rem;
-  height: 45rem;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 2rem;
   transition: transform 200ms;
