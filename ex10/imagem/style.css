@@ -5,117 +5,71 @@
 }
 
 :root {
-  --bg: #8E9AAF;
-  --tittle: #CBC0D3;
-  --bg-main: #EFF1FF;
-  --ff-tittle: 'Staatliches', cursive;
-  --ff-p: 'Palanquin', sans-serif;
+  --bc-header: #8E9AAF;
+  --bc-h1: #CBC0D3;
+  --bc-main: #EFF1FF;
+
+  --ff-tittle-main: 'Staatliches', cursiva;
+  --ff-p: 'Palanquin', sem serifa;
 
   font-size: 62.5%;
 }
 
-body {
-  font-family: var(--ff-p);
-  background: #EFF1FF;
-}
-
-.page {
-  max-width: 38rem;
-  margin: 0 auto;
-}
-
-@media (min-width: 700px) {
-  .page {
-    max-width: 117rem;
-  }
-}
-
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.2rem;
-  
-  background-color: var(--bg);
-  
+  background-color: var(--bc-header);
+  text-align: center;
+  padding-top: 3.2rem;
   padding-bottom: 2.9rem;
 }
 
 header .tittle {
-  background-color: var(--tittle);
-  
-  width: 100%;
-  height: 4.9rem;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--bc-h1);
+  padding: 0.8rem;
+  margin-top: 1.5rem;
 }
 
-header h1 {
+header .tittle h1 {
   color: white;
-  text-align: center;
-  font-family: var(--ff-tittle);
-  line-height: 3.4rem;
-  font-size: 4rem;
-  letter-spacing: 0.05em;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-family: var(--ff-tittle-main);
   font-style: normal;
   font-weight: 400;
+  font-size: 4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-header img {
-  margin-top: 3.2rem;
-}
-
-main {
-  display: grid;
+.page {
   width: 32rem;
-  margin: auto;
   text-align: center;
+  margin: auto;
   padding-top: 1.4rem;
 }
 
-main p {
-  font-family: 'Palanquin';
+.page p {
+  max-width: 50rem;
+  margin: auto;
+  font-family: var(--ff-p);
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 3rem;
-  letter-spacing: 0.04rem;
 }
 
 .container {
   display: grid;
   gap: 3.2rem;
-  padding-bottom: 3.2rem;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
 }
 
 .card {
   position: relative;
-}
-
-#card1 img {
-  height: 25rem;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 2rem;
-  transition: transform 200ms;
-  animation-name: downtop;
-  animation-duration: 1.3s;
-}
-
-.card img:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 .card h2 {
@@ -123,14 +77,11 @@ main p {
   top: 1.6rem;
   right: 1.6rem;
   color: #4A4E69;
-  background: #FEEAFA;
-  border-radius: 20px;
-  width: 11.2rem;
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-tittle);
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.1rem 2.4rem;
+  text-transform: uppercase;
+  font-family: var(--ff-tittle-main);
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -138,7 +89,22 @@ main p {
   letter-spacing: 0.05em;
 
   animation-name: topdown;
-  animation-duration: 1.3s;
+  animation-duration: 700ms;
+}
+
+#card1 img {
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.card img {
+  height: 45rem;
+  object-fit: cover;
+  border-radius: 2rem;
+
+  animation-name: downtop;
+  animation-duration: 700ms;
 }
 
 @keyframes topdown {
@@ -154,20 +120,52 @@ main p {
 }
 
 @keyframes downtop {
-  100% {
-    opacity: 1;
-    transform: translateY();
-  }
-
   0% {
     opacity: 0;
     transform: translateY(15px);
   }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+@media (min-width: 700px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
 
+  .page {
+    width: 100%;
+    padding: 5rem;
+  }
+  
+  #card1 img {
+   height: 45rem; 
+  }
+}
 
-
-
-
-
+@media (min-width: 930px) {
+  
+  .container {
+      grid-template-areas: "A B B"
+      "C C D";
+    }
+  
+    .container div:nth-child(1) {
+      grid-area: A;
+    }
+  
+    main div:nth-child(2) {
+      grid-area: B;
+    }
+  
+    .container div:nth-child(3) {
+      grid-area: C;
+    }
+  
+    .container div:nth-child(4) {
+      grid-area: D;
+    }
+  }
