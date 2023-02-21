@@ -105,6 +105,15 @@ header .tittle h1 {
 
   animation-name: downtop;
   animation-duration: 700ms;
+
+  transition: all 200ms;
+  filter: brightness(1);
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 @keyframes topdown {
