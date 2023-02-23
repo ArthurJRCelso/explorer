@@ -33,4 +33,4 @@ const john = {
   isSubscribed: true,
 }
 
-let name
+let name = "Arthur"
