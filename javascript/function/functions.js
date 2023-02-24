@@ -6,5 +6,14 @@
   * this keyword
 */
 
-function Person() {}
-const arthur = new Person()
+function Person(name) {
+  this.name = name
+  this.walk = function() {
+    return this.name + " está andando"
+  }
+}
+
+const arthur = new Person("Arthur")
+const camila = new Person ("Camila")
+console.log(arthur.walk())
+console.log(camila.walk())
