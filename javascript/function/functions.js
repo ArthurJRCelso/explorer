@@ -1,9 +1,10 @@
-// function hoisting
+/*
+  Function() constructor
 
+  * expressão new
+  * criar um novo objeto
+  * this keyword
+*/
 
-
-let sayMyName = function() {
-  console.log('Mayk')
-}
-
-sayMyName()
+function Person() {}
+const arthur = new Person()
