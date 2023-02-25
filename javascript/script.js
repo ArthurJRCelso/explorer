@@ -1,5 +1,5 @@
-// Transforme letras minúsculas em maiúsculas. Faça o contrário disso também
+// Manipulando strings
 
-let word = "Programar é muito bacana"
-console.log(word.toUpperCase())
-              // toLowerCase()  (letras minúsculas)
+// Verificar se o texto contém a palavra Amor
+let phrases = "Eu quero viver o amor!"
+console.log(phrases.includes("amor"))
