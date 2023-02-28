@@ -10,3 +10,4 @@ O que estou aprendendo de ferramentas do JS
 [] variáveis
 [] concatenação
 [] tipo de dado string
+[] básica de sintaxe
