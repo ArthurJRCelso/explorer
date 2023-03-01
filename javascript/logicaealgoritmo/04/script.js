@@ -23,9 +23,10 @@ noteTwo = Number(noteTwo)
 noteThree = Number(noteThree)
 
 let result = (noteOne + noteTwo + noteThree) / 3
+result = result.toFixed(1)
 
 if (result >= 15) {
-  alert('Parabéns ' + name + '! Sua média foi ' + result.toFixed(1))
+  alert('Parabéns ' + name + '! Sua média foi ' + result)
 } else {
-  alert('Recuperação! Sua média foi ' + result.toFixed(1))
+  alert('Recuperação! Sua média foi ' + result)
 }
