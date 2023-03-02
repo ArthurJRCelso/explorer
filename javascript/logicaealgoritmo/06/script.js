@@ -18,9 +18,9 @@
 */
 
 let result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
-const randomNumber = Math.round(Math.ramdom() * 10)
+const randomNumber = Math.round(Math.random() * 10)
 
-let xAttempts = 1;
+let xAttempts = 1
 
 while(Number(result) != randomNumber) {
   result = prompt("Erro, tente novamente:")
@@ -28,7 +28,7 @@ while(Number(result) != randomNumber) {
 }
 
 
-if (randomNumber == 1) {
+if (xAttempts == 1) {
   alert(`Parabéns! O número que eu pensei foi ${randomNumber} e você advinhou o número em ${xAttempts} tentativa`)
 } else {
   alert(`Parabéns! O número que eu pensei foi ${randomNumber} e você advinhou o número em ${xAttempts} tentativas`)
