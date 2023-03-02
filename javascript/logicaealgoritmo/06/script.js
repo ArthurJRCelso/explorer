@@ -1,5 +1,5 @@
 /*
-  ** Jogo da advinhação **
+  ** Jogo da adivinhação **
 
   Apresente a mensagem ao usuário:
   "Advinhe o número que estou pensando? Está entre 0 e 10"
@@ -27,4 +27,4 @@ while(Number(result) != randomNumber) {
   xAttempts++
 }
 
-alert(`Parabéns! Você advinhou o número em ${xAttempts} tentativas`)
+alert(`Parabéns! O número que eu pensei foi ${randomNumber} e você advinhou o número em ${xAttempts} tentativas`)
