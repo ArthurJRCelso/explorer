@@ -18,7 +18,7 @@
 */
 
 let result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
-const randomNumber = Math.round(Math.random() * 10)
+const randomNumber = Math.round(Math.random() * 11)
 
 let xAttempts = 1
 
