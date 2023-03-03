@@ -15,7 +15,6 @@
   "Parabéns! Você advinhou o número em x tentativas"
 
   Substitua o "x" da mensagem, pelo o número de tentativas
-  5
 */
 
 let result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
