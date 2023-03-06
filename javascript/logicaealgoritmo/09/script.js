@@ -16,29 +16,41 @@
     {
       name: "Arthur",
       age: 26,
-      weigth: 89,
-      heigth: 186,
+      weight: 89,
+      height: 186,
     },
     {
       name: "Camila",
       age: 22,
-      weigth: 56,
-      heigth: 153,
+      weight: 56,
+      height: 153,
     },
     {
       name: "Heitor",
       age: 13,
-      weigth: 61,
-      heigth: 172,
+      weight: 61,
+      height: 172,
     },
     {
       name: "Elisa",
       age: 55,
-      weigth: 92,
-      heigth: 169,
+      weight: 92,
+      height: 169,
     },
   ]
 
-  alert(`Paciente ${patients[0].name} possui o IMC de
-  ${(patients[0].weigth / ((patients[0].heigth / 100) ** 2)).toFixed(2)}`)
+  function IMC(weight, height) {
+    return (weight / ((height / 100) ** 2)).toFixed(2)
+  }
 
+  function printPatientIMC(patient) {
+      return `
+      Paciente ${patient.name} possui o IMC de
+      ${IMC(patient.weight, patient.height)}
+      `
+  }
+
+for (let patient of patients) {
+  let IMCmessage = printPatientIMC(patient)
+  alert(IMCmessage)
+}
