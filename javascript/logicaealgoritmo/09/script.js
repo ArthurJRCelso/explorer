@@ -54,3 +54,10 @@ for (let patient of patients) {
   let IMCmessage = printPatientIMC(patient)
   alert(IMCmessage)
 }
+
+
+
+
+
+
+
