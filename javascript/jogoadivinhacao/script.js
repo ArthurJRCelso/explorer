@@ -17,6 +17,7 @@ function handleTryClick(event) {
     document.querySelector(".screen2 h2").innerHTML = `Acertou em ${xAttempts} tentativas`
   }
 
+  inputNumber.value = ''
   xAttempts++
 
 }
