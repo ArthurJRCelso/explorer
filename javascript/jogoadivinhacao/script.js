@@ -4,7 +4,6 @@ const btnTry = document.querySelector('#btnTry')
 const btnReset = document.querySelector('#btnReset')
 let randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1
-let input1 = document.querySelector('#input1')
 
 // Eventos
 
