@@ -19,7 +19,7 @@ function handleTryClick(event) {
   const inputNumber = document.querySelector("#inputNumber")
 
   if(inputNumber.value < 0 || inputNumber.value > 10 || inputNumber.value == '') {
-    alert('Número inválido!')
+    return alert('Número inválido!')
   }
 
   if(Number(inputNumber.value) == randomNumber) {
