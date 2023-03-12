@@ -19,7 +19,7 @@ function cookie1(e) {
       phraseMot.innerHTML = "Mudar pode dar medo, mas é uma aventura que pode te levar muito longe."
         break;
 
-    case 3:
+    case 3: 
       phraseMot.innerHTML = "Não importa o que você decidiu. O que importa é que isso te faça feliz."
         break;
 
