@@ -11,7 +11,7 @@ button.addEventListener('click', resetClick)
 function cookie1(e) {
   toggleScreen()
   switch(randomNumber) {
-    case 1:
+    case 1: 
       phraseMot.innerHTML = "Comece onde você está. Use o que você tem. Faça o que você pode."
         break;
     
