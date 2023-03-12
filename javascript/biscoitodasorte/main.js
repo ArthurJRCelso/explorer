@@ -15,7 +15,7 @@ function cookie1(e) {
       phraseMot.innerHTML = "Comece onde você está. Use o que você tem. Faça o que você pode."
         break;
     
-    case 2:
+    case 2: 
       phraseMot.innerHTML = "Mudar pode dar medo, mas é uma aventura que pode te levar muito longe."
         break;
 
