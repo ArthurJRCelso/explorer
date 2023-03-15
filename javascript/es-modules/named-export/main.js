@@ -1,4 +1,6 @@
-// main.js
-import qualquerNome from './utils.js' // nessa linha ele importa e já executa o arquivo
+// main
+import funcaoPadrao, { date, greeting } from './utils.js'
 
-alert(qualquerNome)
+// console.log(date)
+// console.log(greeting(jonas))
+// funcaoPadrao('mayk')

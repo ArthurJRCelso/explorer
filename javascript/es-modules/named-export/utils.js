@@ -1,7 +1,9 @@
 // utils.js
-const message = "mensagem" // essa variável fica isolada nesse arquivo, e não consigo usar ela em outro lugar
+const date = new Date()
+const greeting = name => `hello ${name}`
 
-export default message
+export default function (argument) {
+  console.log(date, greeting(argument))
+}
 
-
-
+export { date, greeting }
