@@ -1,21 +1,9 @@
+import { modal } from './modal.js'
+
 // variáveis - variables //
 const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
-
-const modal = {
-
-  wrapper: document.querySelector('.modal-wrapper'),
-  message: document.querySelector('.modal .tittle span'),
-  buttonClose: document.querySelector('.modal button.close'),
-
-  open() {
-    modal.wrapper.classList.add('open')
-  },
-  close() {
-    modal.wrapper.classList.remove('open')
-  }
-}
 
 // 3 maneiras de atribuir função a um evento
 form.onsubmit = function(event) {
@@ -29,10 +17,6 @@ form.onsubmit = function(event) {
 
   modal.message.innerHTML = message
   modal.open()
-}
-
-modal.buttonClose.onclick = () => {
-  modal.close()
 }
 
 function IMC(weight, height) {
