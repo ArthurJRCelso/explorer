@@ -20,12 +20,29 @@ buttonSet.addEventListener('click', addTimer)
 function countDown() {
   setTimeout(function() {
     let seconds = Number(secondDisplay.textContent)
+    let minutes = Number(minutesDisplay.textContent)
+    
+    secondDisplay.textContent = String(seconds - 1).padStart(2, "0")
+
+    if (minutes <= 0) {
+
+      buttonStop.classList.add('hide')
+      buttonSet.classList.remove('hide')
+      buttonPause.classList.add('hide')
+      buttonPlay.classList.remove('hide')
+      
+      return
+    }
 
     if (seconds <= 0) {
       seconds = 60
+
+      minutesDisplay.textContent = String(minutes - 1).padStart(2, "0")
     }
-    
-    secondDisplay.textContent = seconds - 1
+
+    secondDisplay.textContent = String(seconds - 1).padStart(2, "0")
+
+
     countDown()
   }, 1000)
 }
@@ -63,5 +80,5 @@ function soundOn() {
 
 function addTimer() {
   minutes = prompt('Quantos minutos?')
-  minutesDisplay.textContent = minutes
+  minutesDisplay.textContent = String(minutes).padStart(2, "0")
 }
