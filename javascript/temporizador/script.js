@@ -1,18 +1,42 @@
 // DOM
 
-let play = document.querySelector('.play')
-let pause = document.querySelector('.pause')
+const buttonPlay = document.querySelector('.play')
+const buttonPause = document.querySelector('.pause')
+const buttonStop = document.querySelector('.stop')
+const buttonSet = document.querySelector('.set')
+const buttonSoundOn = document.querySelector('.sound-on')
+const buttonSoundOff = document.querySelector('.sound-off')
 
-play.addEventListener('click', playPause)
-pause.addEventListener('click', pausePlay)
+buttonPlay.addEventListener('click', playPause)
+buttonPause.addEventListener('click', pausePlay)
+buttonStop.addEventListener('click', stopSet)
+buttonSoundOn.addEventListener('click', soundOff)
+buttonSoundOff.addEventListener('click', soundOn)
 
 function playPause() {
-  play.classList.add('hide')
-  pause.classList.remove('hide')
+  buttonPlay.classList.add('hide')
+  buttonPause.classList.remove('hide')
+  buttonSet.classList.add('hide')
+  buttonStop.classList.remove('hide')
 }
 
 function pausePlay() {
-  pause.classList.add('hide')
-  play.classList.remove('hide')
+  buttonPause.classList.add('hide')
+  buttonPlay.classList.remove('hide')
 }
 
+function stopSet() {
+  buttonStop.classList.add('hide')
+  buttonSet.classList.remove('hide')
+  buttonPause.classList.add('hide')
+  buttonPlay.classList.remove('hide')
+}
+
+function soundOff() {
+  buttonSoundOn.classList.add('.hide')
+  buttonSoundOff.classList.remove('hide')
+}
+
+function soundOn() {
+  
+}
