@@ -22,7 +22,7 @@ function countDown() {
     let seconds = Number(secondDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
     
-    secondDisplay.textContent = String(seconds - 1).padStart(2, "0")
+    secondDisplay.textContent = "00"
 
     if (minutes <= 0) {
 
