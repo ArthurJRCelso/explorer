@@ -17,6 +17,13 @@ buttonSoundOn.addEventListener('click', soundOff)
 buttonSoundOff.addEventListener('click', soundOn)
 buttonSet.addEventListener('click', addTimer)
 
+function resetControls() {
+  buttonStop.classList.add('hide')
+  buttonSet.classList.remove('hide')
+  buttonPause.classList.add('hide')
+  buttonPlay.classList.remove('hide')
+}
+
 function countDown() {
   setTimeout(function() {
     let seconds = Number(secondDisplay.textContent)
@@ -26,10 +33,7 @@ function countDown() {
 
     if (minutes <= 0) {
 
-      buttonStop.classList.add('hide')
-      buttonSet.classList.remove('hide')
-      buttonPause.classList.add('hide')
-      buttonPlay.classList.remove('hide')
+      resetControls()
       
       return
     }
@@ -62,10 +66,7 @@ function pausePlay() {
 }
 
 function stopSet() {
-  buttonStop.classList.add('hide')
-  buttonSet.classList.remove('hide')
-  buttonPause.classList.add('hide')
-  buttonPlay.classList.remove('hide')
+  resetControls()
 }
 
 function soundOff() {
