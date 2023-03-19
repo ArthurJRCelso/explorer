@@ -24,14 +24,20 @@ function resetControls() {
   buttonPlay.classList.remove('hide')
 }
 
+function updateTimerDisplay(minutes, seconds) {
+  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+  secondDisplay.textContent = String(seconds).padStart(2, "0")
+
+}
+
 function countDown() {
   setTimeout(function() {
     let seconds = Number(secondDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
     
-    secondDisplay.textContent = "00"
+    updateTimerDisplay(minutes, 0)
 
-    if (minutes <= 0) {
+    if (minutes < 0) {
 
       resetControls()
       
@@ -81,5 +87,5 @@ function soundOn() {
 
 function addTimer() {
   minutes = prompt('Quantos minutos?')
-  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+  updateTimerDisplay(minutes, 0)
 }
