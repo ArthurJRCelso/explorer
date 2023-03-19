@@ -37,7 +37,7 @@ function countDown() {
     
     updateTimerDisplay(minutes, 0)
 
-    if (minutes < 0) {
+    if (minutes <= 0) {
 
       resetControls()
       
