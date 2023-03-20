@@ -6,8 +6,8 @@ const buttonStop = document.querySelector('.stop')
 const buttonSet = document.querySelector('.set')
 const buttonSoundOn = document.querySelector('.sound-on')
 const buttonSoundOff = document.querySelector('.sound-off')
-let minutesDisplay = document.querySelector('.minutes')
-let secondDisplay = document.querySelector('.seconds')
+const minutesDisplay = document.querySelector('.minutes')
+const secondDisplay = document.querySelector('.seconds')
 let minutes
 
 buttonPlay.addEventListener('click', playPause)
@@ -33,33 +33,20 @@ function countDown() {
   setTimeout(function() {
     let seconds = Number(secondDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
-
-    if (minutes == 00 && seconds == 00) {
-      alert('Digite um tempo!')
-      resetControls()
-      return
-    }
-    
-    if (minutes == 1 && seconds == 00) {
-      minutes = 0
-    }
-    
-    if (minutes <= 0 && seconds == 1) {
-      
-      resetControls()
-      
-      return
-    }
-    
-    if (seconds <= 0) {
-      seconds = 60
-      
-      minutesDisplay.textContent = String(minutes - 1).padStart(2, "0")
-    }
-    
-    updateTimerDisplay(minutes, 0)
     
     secondDisplay.textContent = String(seconds - 1).padStart(2, "0")
+    if (minutes <= 0) {
+      resetControls()
+      return
+    }
+
+    if (seconds <= 0) {
+      seconds = 60
+      minutesDisplay.textContent = String(minutes - 1).padStart(2, "0")
+    }
+
+    secondDisplay.textContent = String(seconds - 1).padStart(2, "0")
+
     
     countDown()
 
@@ -97,5 +84,6 @@ function soundOn() {
 
 function addTimer() {
   minutes = prompt('Quantos minutos?')
-  updateTimerDisplay(minutes, 0)
+  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+
 }
