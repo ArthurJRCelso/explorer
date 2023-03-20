@@ -45,7 +45,7 @@ function countDown() {
       minutesDisplay.textContent = String(minutes - 1).padStart(2, "0")
     }
 
-    secondDisplay.textContent = String(seconds - 1).padStart(2, "0")
+    secondDisplay.textContent = String(seconds - 1).padStart(2, "0") 
 
     
     countDown()
