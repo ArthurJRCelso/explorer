@@ -9,6 +9,7 @@ const buttonSoundOff = document.querySelector('.sound-off')
 const minutesDisplay = document.querySelector('.minutes')
 const secondDisplay = document.querySelector('.seconds')
 let minutes
+let timeOut
 
 buttonPlay.addEventListener('click', playPause)
 buttonPause.addEventListener('click', pausePlay)
@@ -30,7 +31,7 @@ function updateTimerDisplay(minutes, seconds) {
 }
 
 function countdown() {
-  setTimeout(function() {
+  timeOut = setTimeout(function() {
     let seconds = Number(secondDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
     
@@ -41,18 +42,15 @@ function countdown() {
       return
     }
 
-    if (minutes == 1) {
-      minutes = 0
-    }
-
     if (seconds <= 0) {
       seconds = 60
      
-      updateTimerDisplay(String(minutes - 1), seconds)
+      --minutes
     }
 
     updateTimerDisplay(minutes, String(seconds - 1))
     
+
 
       countdown()
 
@@ -73,10 +71,13 @@ function playPause() {
 function pausePlay() {
   buttonPause.classList.add('hide')
   buttonPlay.classList.remove('hide')
+  clearTimeout(timeOut)
 }
 
 function stopSet() {
   resetControls()
+  updateTimerDisplay(0, 0)
+  
 }
 
 function soundOff() {
@@ -90,6 +91,6 @@ function soundOn() {
 }
 
 function addTimer() {
-  minutes = prompt('Quantos minutos?')
+  minutes = prompt('Quantos minutos?') || 0
   updateTimerDisplay(minutes, 0)
 }
