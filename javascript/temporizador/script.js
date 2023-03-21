@@ -50,14 +50,10 @@ function countdown() {
 
     updateTimerDisplay(minutes, String(seconds - 1))
     
-
-
       countdown()
 
   }, 1000)
 }
-
-
 
 function playPause() {
   buttonPlay.classList.add('hide')
