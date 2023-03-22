@@ -35,7 +35,7 @@ function playPause() {
   buttonPause.classList.remove('hide')
   buttonSet.classList.add('hide')
   buttonStop.classList.remove('hide')
-  countdown()
+  timer.countdown()
   
 }
 

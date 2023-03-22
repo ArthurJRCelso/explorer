@@ -39,6 +39,3 @@ return {
 }
 
 }
-
-// named export
-export { updateTimerDisplay, countdown }
