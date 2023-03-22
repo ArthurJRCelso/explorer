@@ -1,3 +1,9 @@
+export function Timer({
+  minutesDisplay,
+  secondDisplay,
+  timeOut
+}) {
+
 function updateTimerDisplay(minutes, seconds) {
   minutesDisplay.textContent = String(minutes).padStart(2, "0")
   secondDisplay.textContent = String(seconds).padStart(2, "0")
@@ -28,6 +34,11 @@ function countdown() {
   }, 1000)
 }
 
+return {
+  countdown
+}
+
+}
 
 // named export
 export { updateTimerDisplay, countdown }
