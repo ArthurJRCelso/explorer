@@ -27,3 +27,7 @@ function countdown() {
 
   }, 1000)
 }
+
+
+// named export
+export { updateTimerDisplay, countdown }

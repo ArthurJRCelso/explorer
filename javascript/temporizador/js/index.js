@@ -1,3 +1,9 @@
+// ES6 Modules - EcmaScript
+// default import
+import resetControls from "./controls.js"
+// named import
+import { updateTimerDisplay, countdown } from "./timer.js"
+
 const buttonPlay = document.querySelector('.play')
 const buttonPause = document.querySelector('.pause')
 const buttonStop = document.querySelector('.stop')
