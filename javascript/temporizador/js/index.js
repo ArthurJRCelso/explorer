@@ -1,4 +1,4 @@
-// ES6 Modules - EcmaScript
+// ES6 Modules - EcmaScript //
 // default import
 import resetControls from "./controls.js"
 // named import
