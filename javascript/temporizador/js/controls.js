@@ -6,5 +6,8 @@ function resetControls() {
 }
 
 
-// default export
+// default export 
 export default resetControls
+
+
+//E6 Module
