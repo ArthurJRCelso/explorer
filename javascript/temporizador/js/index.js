@@ -1,5 +1,5 @@
 // ES6 Modules - EcmaScript //
-// default import
+// default import 
 import resetControls from "./controls.js"
 // named import
 import { Timer } from "./timer.js"
