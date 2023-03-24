@@ -22,7 +22,7 @@ const configTimer = {
 }
 const timer = Timer(configTimer) 
 
-buttonPlay.addEventListener('click', playPause)
+buttonPlay.addEventListener('click', playPause) 
 buttonPause.addEventListener('click', pausePlay)
 buttonStop.addEventListener('click', stopSet)
 buttonSoundOn.addEventListener('click', soundOff)
