@@ -15,7 +15,7 @@ const secondDisplay = document.querySelector('.seconds')
 let minutes
 let timeOut
 
-const configTimer = {
+const configTimer = { 
   minutesDisplay,
   secondDisplay,
   timeOut,
