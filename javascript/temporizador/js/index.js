@@ -20,7 +20,7 @@ const configTimer = {
   secondDisplay,
   timeOut,
 }
-const timer = Timer(configTimer)
+const timer = Timer(configTimer) 
 
 buttonPlay.addEventListener('click', playPause)
 buttonPause.addEventListener('click', pausePlay)
